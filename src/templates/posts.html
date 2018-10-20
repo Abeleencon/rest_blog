@@ -2,6 +2,7 @@
 {% block content %}
 <div class="container">
     <h2>{{ blog_title }}'s Blog</h2>
+    <a href="/post/new/{{ blog_id }}"> <button class="btn btn-primary">New post</button> </a>
     {% if post|length > 0 %}
         {% for post in posts %}
             <h3>{{ post.title }}</h3>
